@@ -49,14 +49,14 @@ public class Main {
 
                     default:
                         System.out.println(
-                                "\nOpción inválida. Seleccione una opción del 1 al 5."
+                                "\nOpcion invalida. Seleccione una opcion del 1 al 5."
                         );
                 }
 
             } catch (NumberFormatException e) {
 
                 System.out.println(
-                        "\nError: debe ingresar un número válido."
+                        "\nError: debe ingresar un numero valido."
                 );
             }
 
@@ -68,13 +68,13 @@ public class Main {
 
     public static void mostrarMenu() {
 
-        System.out.println("========== MENÚ ==========");
+        System.out.println("========== MENU ==========");
         System.out.println("1. Sumar");
         System.out.println("2. Restar");
         System.out.println("3. Multiplicar");
         System.out.println("4. Dividir");
         System.out.println("5. Salir");
-        System.out.print("Seleccione una opción: ");
+        System.out.print("Seleccione una opcion: ");
     }
 
     public static double pedirNumero(
@@ -94,7 +94,7 @@ public class Main {
             } catch (NumberFormatException e) {
 
                 System.out.println(
-                        "Error: ingrese un número válido."
+                        "Error: ingrese un numero valido."
                 );
             }
         }
@@ -106,12 +106,12 @@ public class Main {
 
         double numero1 = pedirNumero(
                 scanner,
-                "Ingrese el primer número: "
+                "Ingrese el primer numero: "
         );
 
         double numero2 = pedirNumero(
                 scanner,
-                "Ingrese el segundo número: "
+                "Ingrese el segundo numero: "
         );
 
         Calculadora calculadora =
@@ -120,6 +120,8 @@ public class Main {
         System.out.println(
                 "Resultado: " + calculadora.sumar()
         );
+
+        calculadora.mostrarValores();
     }
 
     public static void realizarResta(Scanner scanner) {
@@ -128,12 +130,12 @@ public class Main {
 
         double numero1 = pedirNumero(
                 scanner,
-                "Ingrese el primer número: "
+                "Ingrese el primer numero: "
         );
 
         double numero2 = pedirNumero(
                 scanner,
-                "Ingrese el segundo número: "
+                "Ingrese el segundo numero: "
         );
 
         Calculadora calculadora =
@@ -147,16 +149,16 @@ public class Main {
     public static void realizarMultiplicacion(
             Scanner scanner) {
 
-        System.out.println("\n===== MULTIPLICACIÓN =====");
+        System.out.println("\n===== MULTIPLICACION =====");
 
         double numero1 = pedirNumero(
                 scanner,
-                "Ingrese el primer número: "
+                "Ingrese el primer numero: "
         );
 
         double numero2 = pedirNumero(
                 scanner,
-                "Ingrese el segundo número: "
+                "Ingrese el segundo numero: "
         );
 
         Calculadora calculadora =
@@ -169,16 +171,16 @@ public class Main {
 
     public static void realizarDivision(Scanner scanner) {
 
-        System.out.println("\n===== DIVISIÓN =====");
+        System.out.println("\n===== DIVISION =====");
 
         double numero1 = pedirNumero(
                 scanner,
-                "Ingrese el primer número: "
+                "Ingrese el primer numero: "
         );
 
         double numero2 = pedirNumero(
                 scanner,
-                "Ingrese el segundo número: "
+                "Ingrese el segundo numero: "
         );
 
         Calculadora calculadora =

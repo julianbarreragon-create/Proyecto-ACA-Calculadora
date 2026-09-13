@@ -5,9 +5,15 @@ public class Calculadora {
     private double numero1;
     private double numero2;
 
+    // Arreglo para almacenar los dos valores de la operación
+    private double[] valores = new double[2];
+
     public Calculadora(double numero1, double numero2) {
         this.numero1 = numero1;
         this.numero2 = numero2;
+
+        valores[0] = numero1;
+        valores[1] = numero2;
     }
 
     public double getNumero1() {
@@ -47,5 +53,15 @@ public class Calculadora {
         }
 
         return numero1 / numero2;
+    }
+
+    // Recorre el arreglo una sola vez
+    public void mostrarValores() {
+
+        for (int i = 0; i < valores.length; i++) {
+            System.out.println(
+                    "Valor " + (i + 1) + ": " + valores[i]
+            );
+        }
     }
 }
